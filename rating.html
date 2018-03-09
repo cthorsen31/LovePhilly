@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    <title>LovePhilly | Home</title>
+<head>
+    <title>LovePhilly | Rate Your Visit</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300" rel="stylesheet">
-    </head>
+</head>
+
 <body>
-            <nav>
+    <nav>
         <ul>
             <li><a href="rating.html">Rate Your Trip</a></li>
             <li class="dropdown">
@@ -24,7 +25,6 @@
                     <a href="pretzels.html">Philly Pretzel</a>
                 </div>
             </li>
-            
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="landmarks.html">Landmarks</a></li>
             <li><a href="about.html">History</a></li>
@@ -32,18 +32,32 @@
         </ul>
     </nav>
 
-    <legend class="bgimg">
-        <div class="middle">
-            <h1><span style="color: red">&#10084</span> PHILLY</h1>
-        </div>
-    </legend>
-    
-    
-        <footer>
+    <div class="text-sec">
+        <h1>Rate Your Experience!</h1>
+        <form id="philly" action="process.php" method="POST">
+            <p>How many in your group? <input type="number" min="1" name="groupCount"></p>
+            <p>When did you visit? <input type="date" name="visitDate"></p>
+            <!-- Fieldset w/ Radio buttons for locations -->
+            <fieldset>
+                <legend>Favorite Place?</legend>
+                <input type="radio" name="favPlace" value="Liberty Bell">Liberty Bell<br>
+                <input type="radio" name="favPlace" value="Philadelphia Museum of Art">Philadelphia Museum of Art<br>
+                <input type="radio" name="favPlace" value="Independence Hall">Independence Hall<br>
+                <input type="radio" name="favPlace" value="South Philadelphia Sports Complex">South Philadelphia Sports Complex<br>
+                <input type="radio" name="favPlace" value="Center City">Center City<br>
+            </fieldset>
+            <!-- Rating slider using range and the submit button -->
+            <p>Overall Rating of your visit to Philadelphia:</p>
+            0<input type="range" name="rating" min="0" max="10" step="1">10<br>
+            <input type="submit" name="submit">
+        </form>
+    </div>
+
+
+    <footer>
         <a id="nav-home" href="index.html"><span style="color: red">&#10084</span> PHILLY</a>
         <a href="references.html">References</a>
         <a href="grading.html">Grading</a>
     </footer>
-
 </body>
 </html>

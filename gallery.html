@@ -1,65 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>Site | Gallery</title>
+    <title>LovePhilly | Gallery</title>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/gallery.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
-    <script src="assets/js/gallery.js"></script>
-    <script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
-
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300" rel="stylesheet">
 </head>
+
 <body>
+    <nav>
+        <ul>
+            <li><a href="rating.html">Rate Your Trip</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Sports</a>
+                <div class="dropdown-content">
+                    <a href="teams.html">Teams</a>
+                    <a href="fanbase.html">Fanbase</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Food</a>
+                <div class="dropdown-content">
+                    <a href="cheesesteak.html">Cheesesteaks</a>
+                    <a href="pretzels.html">Philly Pretzel</a>
+                </div>
+            </li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="landmarks.html">Landmarks</a></li>
+            <li><a href="about.html">History</a></li>
+            <li><a id="nav-home" href="index.html"><span style="color: red">&#10084</span> PHILLY</a></li>
+        </ul>
+    </nav>
+    
+    <h1>Philadelphia Gallery</h1>
+        <!-- Photo Grid -->
+    <div class="row"> 
+      <div class="column">
+        <img src="/assets/media/gallery/amazing-philadelphia-skyline-wallpaper-1920x1200-phone-WTG3083910.jpg" style="width:100%">
+        <img src="/assets/media/gallery/beautiful-philadelphia-skyline-wallpaper-1920x1200-for-4k-monitor-WTG3083909.jpg" style="width:100%">
+        <img src="/assets/media/gallery/download-free-philadelphia-skyline-wallpaper-2560x1440-WTG3083892.jpg" style="width:100%">
+        <img src="/assets/media/gallery/download-philadelphia-skyline-wallpaper-2560x1600-WTG3083867.jpg" style="width:100%">
+        <img src="assets/media/gallery/vertical-philadelphia-skyline-wallpaper-1920x1200-for-mac-WTG3083903.jpg" style="width:100%">
+        <img src="/assets/media/gallery/philadelphia-skyline-wallpaper-1920x1080-hd-1080p-WTG3083865.jpg" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="/assets/media/gallery/free-download-philadelphia-skyline-wallpaper-1920x1080-pictures-WTG3083898.jpg" style="width:100%">
+        <img src="/assets/media/gallery/free-download-philadelphia-skyline-wallpaper-2560x1600-WTG3083914.jpg" style="width:100%">
+        <img src="/assets/media/gallery/free-download-philadelphia-skyline-wallpaper-2880x1800-WTG3083912.jpg" style="width:100%">
+        <img src="/assets/media/gallery/full-size-philadelphia-skyline-wallpaper-1920x1080-for-phones-WTG3083907.jpg" style="width:100%">
+        <img src="assets/media/gallery/widescreen-philadelphia-skyline-wallpaper-2048x1536-lockscreen-WTG3083879.jpg" style="width:100%">
+        <img src="/assets/media/phillybg.jpg" style="width:100%">
+      </div>  
+      <div class="column">
+        <img src="/assets/media/gallery/large-philadelphia-skyline-wallpaper-1920x1080-WTG3083853.jpg" style="width:100%">
+        <img src="/assets/media/gallery/most-popular-philadelphia-skyline-wallpaper-1080x1920-for-ipad-2-WTG3083890.jpg" style="width:100%">
+        <img src="/assets/media/gallery/philadelphia-skyline-wallpaper-1080x1920-macbook-WTG3083908.jpg" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="/assets/media/gallery/philadelphia-skyline-wallpaper-1920x1200-computer-WTG3083869.jpg" style="width:100%">
+        <img src="/assets/media/gallery/philadelphia-skyline-wallpaper-1920x1200-images-WTG3083845.jpg" style="width:100%">
+        <img src="/assets/media/gallery/philadelphia-skyline-wallpaper-1920x1200-smartphone-WTG3083847.jpg" style="width:100%">
+        <img src="/assets/media/gallery/philadelphia-skyline-wallpaper-2048x2048-windows-xp-WTG3083902.jpg" style="width:100%">
+        <img src="/assets/media/gallery/philadelphia-skyline-wallpaper-2560x1440-for-hd-WTG3083863.jpg" style="width:100%">
+      </div>
+    </div>
 
-<h1>Masonry - imagesLoaded callback, vanilla JS</h1>
-
-<div class="grid">
-  <div class="grid-sizer"></div>
-  <div class="grid-item">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" />
-  </div>
-  <div class="grid-item">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" />
-  </div>
-  <div class="grid-item">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" />
-  </div>
-  <div class="grid-item">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" />
-  </div>
-  <div class="grid-item">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" />
-  </div>
-  <div class="grid-item">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" />
-  </div>
-  <div class="grid-item">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" />
-  </div>
-  <div class="grid-item">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" />
-  </div>
-  <div class="grid-item">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" />
-  </div>
-</div>
-
-
-<!--
     <footer>
-        <div id="footer-pages">
-            <a href="../hidden/references.html">References</a>
-            <a href="../hidden/grading.html">Grading</a>
-        </div>
-
-        <a id="footer-home" href="../index.html">Home</a>
-
-        <div id="footer-icons">
-            <a href="https://www.cthorsen.com" target="_blank"><i class="zmdi zmdi-desktop-windows zmdi-hc-2x"></i></a>
-            <a href="https://www.github.com/cthorsen31/" target="_blank"><i class="zmdi zmdi-github zmdi-hc-2x"></i></a>
-        </div>
+        <a id="nav-home" href="index.html"><span style="color: red">&#10084</span> PHILLY</a>
+        <a href="references.html">References</a>
+        <a href="grading.html">Grading</a>
     </footer>
-    -->
-
 </body>
 </html>
